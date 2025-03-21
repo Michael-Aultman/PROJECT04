@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma solidity  ^0.6.12;
 
 interface IReentrance {
     function donate(address _to) external payable;
@@ -10,7 +10,7 @@ contract ReentranceAttack {
     IReentrance public target;
     address public attacker;
 
-    constructor(address _target) {
+    constructor(address _target) public {
         target = IReentrance(_target);
         attacker = msg.sender;
     }

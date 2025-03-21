@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.20;
+pragma solidity  ^0.6.12;
 
-import "@openzeppelin/contracts/utils/math/Math.sol";
+//import "@openzeppelin/contracts/utils/math/Math.sol";
 
 contract Reentrance {
-    using Math for uint256;
+    //using Math for uint256;
 
     mapping(address => uint256) public balances;
 
